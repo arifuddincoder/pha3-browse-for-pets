@@ -16,8 +16,10 @@
             theme: {
               extend: {
                 colors: {
-                  'custom-gold': '#B68C5A',
-                  'dark-3':'#707070',
+                  'cl-fff9f4': '#FFF9F4',
+                  'cl-ffdc26':'#FFDC26',
+                  'cl-f9df8a':'#F9DF8A',
+                  'cl-111111':'#111111',
                 },
                 fontFamily: {
                   'adlam-display': ['ADLaM Display', 'serif'],
@@ -28,5 +30,71 @@
           }
         </script>
     </head>
-    <body></body>
+    <body class="font-sora cl-111111">
+        <header class="bg-cl-fff9f4 px-2">
+            <div class="container mx-auto max-w-[1320px] py-6">
+                <div class="navbar">
+                    <div class="navbar-start">
+                        <a class="flex items-center gap-3">
+                            <img src="assets/logo-header.png" alt="">
+                            <h3 class="text-[26px] gap-0 hidden md:flex">
+                                Browse
+                                <span class="text-cl-ffdc26">4</span>
+                                Pets
+                            </h3>
+                        </a>
+                    </div>
+                    <div class="navbar-center hidden lg:block">
+                        <ul class="flex gap-8 text-xl">
+                            <li>
+                                <a href="">Find a pet</a>
+                            </li>
+                            <li>
+                                <a href="">Breeds</a>
+                            </li>
+                            <li>
+                                <a href="">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="navbar-end">
+                        <div class="lg:flex items-center gap-4 hidden">
+                            <!-- Notification Icon -->
+                            <button class="hidden xl:block">
+                                <img src="assets/bell.svg" alt="">
+                            </button>
+                            <!-- Search Icon -->
+                            <button class="hidden xl:block">
+                                <img src="assets/search.svg" alt="">
+                            </button>
+                            <!-- Login Button -->
+                            <button class="bg-transparent border text-xl border-cl-ffdc26 text-cl-111111 px-8 py-3 rounded-lg">
+                                Login
+                            </button>
+                            <!-- Register Button -->
+                            <button class="bg-cl-ffdc26 px-8 py-3 text-cl-111111 text-xl rounded-lg hover:bg-yellow-500">
+                                Register
+                            </button>
+                        </div>
+                        <div class="dropdown dropdown-end lg:hidden">
+                            <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
+                                <img src="assets/menu-icon.svg" alt="">
+                            </div>
+                            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow dropdown-end">
+                                <li>
+                                    <a href="">Find a pet</a>
+                                </li>
+                                <li>
+                                    <a href="">Breeds</a>
+                                </li>
+                                <li>
+                                    <a href="">Contact us</a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+    </body>
 </html>
