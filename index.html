@@ -31,7 +31,7 @@
         </script>
     </head>
     <body class="font-sora cl-111111">
-        <header class="bg-cl-fff9f4 px-2">
+        <header class="px-2 bg-cl-fff9f4">
             <div class="container mx-auto max-w-[1320px] py-6">
                 <div class="navbar">
                     <div class="navbar-start">
@@ -44,7 +44,7 @@
                             </h3>
                         </a>
                     </div>
-                    <div class="navbar-center hidden lg:block">
+                    <div class="hidden navbar-center lg:block">
                         <ul class="flex gap-8 text-xl">
                             <li>
                                 <a href="">Find a pet</a>
@@ -58,7 +58,7 @@
                         </ul>
                     </div>
                     <div class="navbar-end">
-                        <div class="lg:flex items-center gap-4 hidden">
+                        <div class="items-center hidden gap-4 lg:flex">
                             <!-- Notification Icon -->
                             <button class="hidden xl:block">
                                 <img src="assets/bell.svg" alt="">
@@ -68,11 +68,11 @@
                                 <img src="assets/search.svg" alt="">
                             </button>
                             <!-- Login Button -->
-                            <button class="bg-transparent border text-xl border-cl-ffdc26 text-cl-111111 px-8 py-3 rounded-lg">
+                            <button class="px-8 py-3 text-xl bg-transparent border rounded-lg border-cl-ffdc26 text-cl-111111">
                                 Login
                             </button>
                             <!-- Register Button -->
-                            <button class="bg-cl-ffdc26 px-8 py-3 text-cl-111111 text-xl rounded-lg hover:bg-yellow-500">
+                            <button class="px-8 py-3 text-xl rounded-lg bg-cl-ffdc26 text-cl-111111 hover:bg-yellow-500">
                                 Register
                             </button>
                         </div>
@@ -80,7 +80,7 @@
                             <div tabindex="0" role="button" class="btn btn-ghost btn-circle">
                                 <img src="assets/menu-icon.svg" alt="">
                             </div>
-                            <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-3 w-52 p-2 shadow dropdown-end">
+                            <ul tabindex="0" class="z-50 p-2 mt-3 shadow menu menu-sm dropdown-content bg-base-100 rounded-box w-52 dropdown-end">
                                 <li>
                                     <a href="">Find a pet</a>
                                 </li>
@@ -106,12 +106,22 @@
                     the Bes
                 </h1>
                 <p class="mb-6">Discover a world of treats, toys, and essentials handpicked for your furry friends. Shop now and make tails wag with joy!</p>
-                <button class="bg-cl-ffdc26 px-8 py-3 text-cl-111111 text-xl rounded-lg hover:bg-yellow-500">
+                <button class="px-8 py-3 text-xl rounded-lg bg-cl-ffdc26 text-cl-111111 hover:bg-yellow-500">
                     Find a pet
                 </button>
             </div>
-            <div class="z-10 flex justify-end relative lg:-top-96 -top-24 md:-top-44">
+            <div class="flex justify-end -mt-24 lg:-mt-96 md:-mt-44">
                 <img src="assets/cat-big.png" alt="">
+            </div>
+        </section>
+        <section>
+            <h2>Browse By Categories</h2>
+            <div>
+                <div>
+                    <img src="assets/dog-cartoon.png" alt="">
+                    <h5>Dog</h5>
+                    <p>3 items</p>
+                </div>
             </div>
         </section>
     </body>
